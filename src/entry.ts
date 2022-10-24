@@ -1,12 +1,10 @@
 import { App } from "vue";
-import TSXButton from "./components/button/index";
-import VueButton from "./components/button/index.vue";
+import SButton from "./components/button/index";
 
-export { TSXButton, VueButton };
+export { SButton };
 
 export default {
   install(app: App): void {
-    app.component(TSXButton.name, TSXButton);
-    app.component(VueButton.name, VueButton);
+    app.component(SButton.name, SButton);
   },
 };

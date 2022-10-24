@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
+import { presetUno, presetAttributify, presetIcons } from "unocss";
+import Unocss from "unocss/vite";
 
 const rollupOptions = {
   external: ["vue"],
@@ -12,7 +14,13 @@ const rollupOptions = {
 };
 
 export default defineConfig({
-  plugins: [vue(), vueJSX()],
+  plugins: [
+    vue(),
+    vueJSX(),
+    // Unocss({
+    //   presets: [presetUno(), presetAttributify(), presetIcons()],
+    // }),
+  ],
   build: {
     rollupOptions,
     minify: `terser`, // boolean | 'terser' | 'esbuild'
