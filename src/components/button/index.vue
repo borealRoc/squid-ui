@@ -1,5 +1,5 @@
 <template>
-    <button>s-button</button>
+    <button>s-button-vue</button>
 </template>
 
 <script lang="ts">
