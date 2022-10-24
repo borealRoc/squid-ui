@@ -1,3 +1,3 @@
 <template>
-    <s-button></s-button>
+    <s-button>default</s-button>
 </template>

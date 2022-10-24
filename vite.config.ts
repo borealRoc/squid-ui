@@ -17,9 +17,9 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJSX(),
-    // Unocss({
-    //   presets: [presetUno(), presetAttributify(), presetIcons()],
-    // }),
+    Unocss({
+      presets: [presetUno(), presetAttributify(), presetIcons()],
+    }),
   ],
   build: {
     rollupOptions,
