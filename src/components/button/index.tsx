@@ -1,7 +1,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "s-button",
+  name: "s-tsx-button",
   render() {
     return <button>s-button-tsx</button>;
   },

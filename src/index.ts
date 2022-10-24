@@ -1,4 +1,5 @@
 import { createApp } from "vue";
-import SButton from "./components/button/index";
+import App from "./App.vue";
+import SquidUI from "./entry";
 
-createApp(SButton).mount("#app");
+createApp(App).use(SquidUI).mount("#app");

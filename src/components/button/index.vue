@@ -4,6 +4,6 @@
 
 <script lang="ts">
 export default {
-    name: 's-button'
+    name: 's-vue-button'
 }
 </script>
