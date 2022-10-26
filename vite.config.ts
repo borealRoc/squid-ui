@@ -9,6 +9,7 @@ const rollupOptions = {
     globals: {
       vue: "Vue",
     },
+    assetFileNames: `assets/squid-ui.css`,
   },
 };
 
@@ -21,6 +22,7 @@ export default defineConfig({
   build: {
     rollupOptions,
     minify: `terser`, // boolean | 'terser' | 'esbuild'
+    cssCodeSplit: true, // Build 时单独导出 CSS
     lib: {
       entry: "./src/entry.ts",
       name: "SquidUI",

@@ -1,5 +1,6 @@
 import { defineComponent, PropType } from "vue";
 import { bType, bSize } from "../../types/button";
+import "uno.css";
 
 export const props = {
   type: {
@@ -26,7 +27,6 @@ export const props = {
 
 export default defineComponent({
   name: "s-button",
-  // 注册属性
   props,
   setup(props, { slots }) {
     const colors = {
