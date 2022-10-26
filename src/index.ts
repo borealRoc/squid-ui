@@ -1,6 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+import './index.css'
+import "uno.css";
+
 import SquidUI from "./entry";
 createApp(App).use(SquidUI).mount("#app");
 
