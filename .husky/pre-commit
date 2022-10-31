@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo ====代码静态检查====
+echo ====提交代码前进行代码静态检查====
 pnpm run lint
