@@ -1,11 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import './index.css'
+import "./index.css";
 
 import SquidUI from "./entry";
 createApp(App).use(SquidUI).mount("#app");
-
 
 // 完整引入
 // import SquidUI from "../dist/squid-ui.mjs"

@@ -37,22 +37,34 @@ export default defineComponent({
       warning: "yellow",
       danger: "red",
     };
-    const { type, plain, round, size, icon } = props;
+    // 40:11  error  Getting a value from the `props` in root scope of `setup()` will cause the value to lose reactivity  vue/no-setup-props-destructure
+    // setup 中接受的props是响应式的， 当传入新的 props 时，会及时被更新。由于是响应式的， 所以不可以使用 ES6 解构，解构会消除它的响应式
+    // const { type, plain, round, size, icon } = props;
     return () => (
       <button
         class={`
           s-btn
-          ${size}-btn
-          bg-${colors[type]}-${plain ? 100 : 500}
-          hover:bg-${colors[type]}-${plain ? 500 : 300}
-          text-${type === "default" ? "black" : plain ? colors[type] : "white"}
-          hover:text-${type === "default" ? "blue" : "white"}
-          border-${type === "default" ? "white" : colors[type]}
-          hover:border-${type === "default" ? "blue" : colors[type]}
-          ${round ? "rounded-full" : ""}
+          ${props.size}-btn
+          bg-${colors[props.type]}-${props.plain ? 100 : 500}
+          hover:bg-${colors[props.type]}-${props.plain ? 500 : 300}
+          text-${
+            props.type === "default"
+              ? "black"
+              : props.plain
+              ? colors[props.type]
+              : "white"
+          }
+          hover:text-${props.type === "default" ? "blue" : "white"}
+          border-${props.type === "default" ? "white" : colors[props.type]}
+          hover:border-${props.type === "default" ? "blue" : colors[props.type]}
+          ${props.round ? "rounded-full" : ""}
         `}
       >
-        {icon !== "" ? <i class={`i-ic-baseline-${icon} p-3`} /> : ""}
+        {props.icon !== "" ? (
+          <i class={`i-ic-baseline-${props.icon} p-3`} />
+        ) : (
+          ""
+        )}
         {slots.default ? slots.default() : ""}
       </button>
     );
