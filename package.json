@@ -1,6 +1,6 @@
 {
   "name": "squid-ui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "基于 Vite 的组件库工程化实战",
   "main": "index.js",
   "scripts": {

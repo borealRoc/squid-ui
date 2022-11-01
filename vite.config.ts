@@ -26,7 +26,7 @@ export default defineConfig({
     sourcemap: true, // 导出 SourceMap
     reportCompressedSize: true, // 生成压缩大小报告
     lib: {
-      entry: "./src/entry.ts",
+      entry: "./src/",
       name: "SquidUI", // 生成包的名字，在 iife/umd 包，同一页上的其他脚本可以访问它
       fileName: "squid-ui", // 是文件名，其实只是一个输出文件名的前缀，默认情况下会和模块类型配合组成最终的文件名
       formats: ["es", "umd", "iife"], // 导出模块类型
