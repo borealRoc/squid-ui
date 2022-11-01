@@ -3,7 +3,7 @@
 #### 介绍
 基于 Vite 的组件库工程化实战
 <p align="center">
-    <a href="https://github.com/borealRoc/squid-ui/blob/master/.github/workflows/main.yml"><img src="https://github.com/borealRoc/squid-ui/blob/master/.github/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
+    <a href="https://github.com/borealRoc/squid-ui/actions/workflows/main.yml"><img src="https://github.com/borealRoc/squid-ui/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
 </p>
 
 #### 软件架构
