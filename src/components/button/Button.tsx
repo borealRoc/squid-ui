@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from "vue";
-import { bType, bSize } from "../../types/button";
+import { bType, bSize } from "../../types/";
 import "uno.css";
 
 export const props = {

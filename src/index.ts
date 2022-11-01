@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import "./index.css";
+import "./styles/index.css";
 
-import SquidUI from "./entry";
+import SquidUI from "./components/";
 createApp(App).use(SquidUI).mount("#app");
 
 // 完整引入
