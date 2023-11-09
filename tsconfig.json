@@ -1,0 +1,17 @@
+{
+    // 编译规则
+    "compilerOptions": {
+        "declaration": true, // 生成声明文件，开启后会自动生成声明文件
+        "declarationDir": "./dist/types", // 生成声明文件的存放目录
+        "jsx": "preserve",
+    },
+    "include": [
+        "./**/*.*",
+        "./shims-vue.d.ts",
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "esModuleInterop": true, // 允许“export.xx=”(cjs)导出的内容，用import from(esm)的方式 导入
+    "allowSyntheticDefaultImports": "true" // 允许下面的导入：import React from "react" 用来替代 import * as React from "react";
+}
