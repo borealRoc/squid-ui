@@ -11,8 +11,12 @@
   "author": "xusp <xspstudyemail@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@iconify-json/ic": "1.1.4",
+    "@unocss/reset": "^0.57.3",
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
+    "terser": "5.15.1",
+    "unocss": "0.45.6",
     "vite": "3.0.7"
   },
   "dependencies": {

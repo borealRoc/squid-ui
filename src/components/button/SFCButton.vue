@@ -1,5 +1,5 @@
 <template>
-    <button>SFC Button</button>
+    <button py-10>SFC Button</button>
 </template>
   
 <script lang="ts">
