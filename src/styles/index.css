@@ -1,0 +1,30 @@
+html {
+    /* 方便unocss计算：1单位 = 0.25rem = 1px */
+    font-size: 4px;
+}
+
+body {
+    font-size: 14px;
+}
+
+
+button {
+    box-sizing: border-box;
+}
+
+button {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+    border: solid 1px #dcdfe6;
+    border-radius: 1rem;
+    outline: 0;
+    color: #606266;
+    background-color: #fff;
+    cursor: pointer;
+}
