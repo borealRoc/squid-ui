@@ -14,7 +14,7 @@ const rollupOptions = {
     globals: {
       vue: "Vue",
     },
-    assetFileNames: 'assets/[name].[ext]'
+    assetFileNames: `assets/squid-ui.css`,
   },
 };
 

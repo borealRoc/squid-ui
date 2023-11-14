@@ -15,8 +15,9 @@ const _export_sfc = (sfc, props2) => {
   }
   return target;
 };
+const _hoisted_1 = { "py-10": "" };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", null, "SFC Button");
+  return openBlock(), createElementBlock("button", _hoisted_1, "SFC Button");
 }
 const SFCButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
 const JSXButton = defineComponent({

@@ -4,7 +4,6 @@ import SFCButton from "./button/SFCButton.vue";
 import JSXButton from "./button/JSXButton";
 import SButton from './button/'
 
-// 二、在 vite 中使用 unocss
 // 1. 重置样式 这里引入自定义的重置样式也可
 // import '@unocss/reset/tailwind.css'
 /** 

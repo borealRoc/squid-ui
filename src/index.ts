@@ -8,12 +8,12 @@ import App from '../src/App.vue'
 
 // 一、squid-ui 组件库引入方式
 // 1. 全局引入
-import SquidUI from "../dist/squid-ui.mjs"
-import '../dist/assets/index.css'
+import SquidUI from '../dist/squid-ui.mjs'
+import '../dist/assets/squid-ui.css'
 createApp(App).use(SquidUI).mount("#app");
 // 2. 按需引入
 // import { RenderButton, SFCButton, JSXButton, SButton } from "../dist/squid-ui.mjs"
-// import '../dist/assets/index.css'
+// import '../dist/assets/squid-ui.css'
 // createApp(App)
 //     .component(RenderButton.name, RenderButton)
 //     .component(SFCButton.name, SFCButton)
